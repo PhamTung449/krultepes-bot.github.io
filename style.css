@@ -8,6 +8,7 @@
 }
 
 html,body {
+    background-color: #202020;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -19,7 +20,7 @@ html,body {
     height: 100vh;
 }
 #header {
-    background-color: rgb(255, 255, 255);
+    background-color: #202020;;
     width: 100%;
     padding:0px 30px;
     margin-top:33px;
@@ -38,7 +39,7 @@ html,body {
 }
 
 #menu .item a {
-    color: #383838;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -79,6 +80,8 @@ html,body {
 }
 
 #banner .box-left p {
+    margin-top:25px;
+    font-size:20px;
     color:#141313;
 }
 

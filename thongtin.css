@@ -118,7 +118,7 @@ html {
     overflow-y: hidden;
 }
 body {
-    background-color: rgb(255, 255, 255);;
+    background-color: #202020;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ body {
 }
 
 #header {
-    background-color: #ffffff;
+    background-color: #202020;
     width: 100%;
     padding:0px 30px;
     margin-top:33px;
@@ -148,7 +148,7 @@ body {
 }
 
 #menu .item a {
-    color: #383838;
+    color: #ffffff;
     text-decoration: none;
 }
 
