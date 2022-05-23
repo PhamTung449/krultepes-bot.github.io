@@ -7,6 +7,12 @@
     cursor: pointer;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 #wrapper {
     /* Kích thước màn hình là 1280 x 720 */
     width: 100%;
@@ -49,8 +55,11 @@
 
 
 #banner {
-    width: 100%;
+    width: 120%;
     background-image :url("assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
     height: 463px;
     margin-top:40px;
     display: flex;
@@ -65,11 +74,11 @@
 #banner  .box-left h2 {
     font-size:48px;
     margin-top:75px;
-    color:rgb(55, 57, 59);
+    color:rgb(17, 18, 19);
 }
 
 #banner .box-left p {
-    color:#bc0de7;
+    color:#141313;
 }
 
 #banner .box-left button {
