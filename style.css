@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-html, body {
+html,body {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -19,6 +19,7 @@ html, body {
     height: 100vh;
 }
 #header {
+    background-color: rgb(255, 255, 255);
     width: 100%;
     padding:0px 30px;
     margin-top:33px;
@@ -37,7 +38,7 @@ html, body {
 }
 
 #menu .item a {
-    color:#626A67;
+    color: #383838;
     text-decoration: none;
 }
 
