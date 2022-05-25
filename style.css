@@ -193,7 +193,7 @@ section .title::after {
 }
 .features .title::after,
 .contributors .title::after {
-  background: #121212;
+  background: #ffffff00;
   content: "I can do >ᴗ<"
 }
 .features .features-content, 
@@ -227,7 +227,7 @@ section .title::after {
 }
 .card i {
   font-size: 50px;
-  color: #2c2c2c;
+  color: #e159fc;
   transition: color 0.3s ease;
 }
 .card .text {
