@@ -1,28 +1,64 @@
-const next = document.querySelector('.next')
-const prev = document.querySelector('.prev')
-const comment = document.querySelector('#list-comment')
-const commentItem = document.querySelectorAll('#list-comment .item')
-var translateY = 0
-var count = commentItem.length
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if(this.scrollY > 20) {
+      $('.navbar').addClass("sticky");
+    } else {
+      $('.navbar').removeClass("sticky");
+    }
+    if(this.scrollY > 500) {
+      $('.scroll-up-btn').addClass("show");
+    } else {
+      $('.scroll-up-btn').removeClass("show");
+    }
+  })
 
-next.addEventListener('click', function (event) {
-  event.preventDefault()
-  if (count == 1) {
-    // Xem hết bình luận
-    return false
-  }
-  translateY += -400
-  comment.style.transform = `translateY(${translateY}px)`
-  count--
-})
+  $('.scroll-up-btn').click(function() {
+    $('html').animate({scrollTop: 0});
+  })
+  
+  $('.menu-btn').click(function() {
+    $('.navbar .menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+  })
 
-prev.addEventListener('click', function (event) {
-  event.preventDefault()
-  if (count == 3) {
-    // Xem hết bình luận
-    return false
-  }
-  translateY += 400
-  comment.style.transform = `translateY(${translateY}px)`
-  count++
+  var typed = new Typed('.typing', {
+    strings: [
+      "simple",
+      "powerful",
+      "easy to use",
+      "cool",
+      "your waifu",
+      "made with love",
+      "well developed",
+      "nice",
+    ],
+    typeSpeed: 120,
+    backSpeed: 80,
+    loop: true,
+  })
+
+  // this is really cool
+  // but you should vote Krul Tepes first
+
+  $('.carousel').owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0:{
+        items: 1,
+        nav: false
+      },
+      600:{
+        items: 2,
+        nav: false
+      },
+      1000:{
+        items: 3,
+        nav: false
+      }
+    }
+  });
+
 })

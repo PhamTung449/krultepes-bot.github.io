@@ -1,59 +1,341 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Krul Tepes </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://cdn.discordapp.com/avatars/978091930997112842/5ac9b24d9791e038fa5b0966faf42d4c.webp?size=4096">
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<body>
-    <div id="wrapper">
-        <div id="header">
-            <a href="https://krultepes-bot.ga/" class="logo">
-                <img src="assets/logo.png" alt="Welcome to クルル・ツェペシ / Krul Tepes">
-            </a>
-            <div id="menu">
-                <div class="item">
-                    <a href="thongtin.html" title="Thông tin của Famukonkiri#2303 và Bot">Thông tin</a>
-                </div>
-                <div class="item">
-                    <a href="https://discord.com/api/oauth2/authorize?client_id=978091930997112842&permissions=8&scope=bot" target="_blank" title="Mời bot vào máy chủ Discord của bạn">Link mời bot</a>
-                </div>
-                <div class="item">
-                    <a href="https://discord.com/invite/fsGhbCxH" target="_blank" title="Liên hệ qua Discord Famukonkiri#2303">Liên hệ Discord</a>
-                </div>
-                <div class="item">
-                    <a href="https://www.facebook.com/phamcongtung06/" target="_blank" title="Liên hệ qua Facebook Phạm Tùng">Liên hệ Facebook</a>
-                </div>
-            </div>
-            <div id="actions">
-                <div class="item">
-                    <img src="assets/user.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="assets/cart.png" alt="">
-                </div>
-            </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Krul Tepes </title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      href="images/icon.jpg"
+    />
+    <bgsound src="https://cdn.discordapp.com/attachments/873089654667235348/875760019726008401/chilled-acoustic-indie-folk-instrumental-background-music-for-videos-5720.mp3" loop="infinite">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./aos/aos.css" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Krul Tepes" />
+
+    <meta
+      property="og:description"
+      content="A simple, multipurpose Discord bot."
+    />
+
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/978091930997112842/5ac9b24d9791e038fa5b0966faf42d4c.webp?size=4096"/>
+
+    <meta name="theme-color" content="#22b4b7" />
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#home">Krul Tepes<span></span></a>
         </div>
-        <div id="banner">
-            <div class="box-left">
-                <h2>
-                    <span>Chào mừng đến với</span>
-                    <br>
-                    <span>Bot discord Krul Tepes</span>
-                    <br>
-                    <span>(クルル・ツェペシ)</span>
-                </h2>
-                <p>Bot đang được phát triển bởi Famukonkiri#2303 
-                    trên nền tảng Node.js , hiện tại bot vẫn đang trong quá trình phát triển giai đoạn đầu tiên.
-                    Rất mong nhận được sự đón nhận của mọi người!
-                </p>
-            </div>
-        </div>
-</body>
 
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+
+          <li>
+            <a href="#features" class="menu-btn" class="menu-btn">Features</a>
+          </li>
+
+          <li><a href="#stats" class="menu-btn">Stats</a></li>
+
+          <li><a href="#contributors" class="menu-btn">About</a></li>
+
+          <li><a href="contact.html" class="menu-btn">Contact</a></li>
+
+          <li><a href="premium.html" class="menu-btn">Premium</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is</div>
+
+          <div class="text-2">Krul Tepes</div>
+
+          <div class="text-3">And I am <span class="typing"></span></div>
+
+          <a class="this-is-pain" href="invite.html">Invite Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="max-width">
+        <h2 class="title">My Features</h2>
+
+        <div class="features-content">
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-cogs"></i>
+
+              <div class="text">Customization</div>
+
+              <p>
+                Customize your Discord server using welcome and leave messages,
+                level up system, custom commands, NQN mode and much more!
+                <p>(Coming Soon™)</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-code"></i>
+
+              <div class="text">Games</div>
+
+              <p>
+                Tons Of Games Are awaiting for you! claim all your deservings
+                and win!
+                <p>(Coming Soon™)</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-music"></i>
+
+              <div class="text">Music</div>
+
+              <p>
+                An extremely high quality music system where you can play songs
+                or listen to YouTube or Twitch live streams in a Discord voice
+                chat.
+                Due to Sometime The Music Will be Unavailable 
+                <p>(Coming Soon™)</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-lock"></i>
+
+              <div class="text">Moderation</div>
+
+              <p>
+                Protect your Discord server with Krul Tepes's robust moderation and
+                powerful commands to improve and speed up moderation.
+                <p>(Coming Soon™)</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-terminal"></i>
+
+              <div class="text">Web Dashboard</div>
+
+              <p>
+                Configure each and every setting from the Web Dashboard of Krul Tepes!
+                <p>(Coming Soon™)</p>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-arrow-up"></i>
+
+              <div class="text">Level up System</div>
+
+              <p>
+                Make your server more active by rewarding users points, roles,
+                and more for being active.
+                <p>(Coming Soon™)</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="max-width">
+        <h2 class="title">
+          My Stats
+        </h2>
+
+        <div class="stats-content">
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-server"></i>
+
+              <div class="text">Servers</div>
+
+              <p id="server-count"></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-user"></i>
+
+              <div class="text">Users</div>
+
+              <p id="user-count"></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-terminal"></i>
+
+              <div class="text">Commands Used</div>
+
+              <p>0</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contributors" id="contributors">
+      <div class="max-width">
+          <h2 class="title">
+              Staff
+          </h2>
+          <div class="carousel owl-carousel">
+
+              <div class="cardd">
+                  <div class="boxx">
+                      <img src="https://cdn.discordapp.com/avatars/692357072280354856/f17da06425e5aa72cbcefae0d80049ac.webp?size=4096" alt>
+                      <div class="text">Famukonkiri#2303</div>
+                      <p>
+                          <button class="badges owner">Owner</button>
+                          <button class="badges developer">Developer</button>
+                      </p>
+                  </div>
+              </div>
+              <div class="cardd">
+                  <div class="boxx">
+                    <img src="https://cdn.discordapp.com/avatars/721746046543331449/f9ba7fb35b223e5f1a12eb910faa40c2.webp?size=4096" alt>
+                    <div class="text">Shiraori#1782</div>
+                    <p>
+                        <button class="badges helper">Helper</button>
+                        <button class="badges supporter">Supporter</button>
+                    </p>
+                  </div>
+              </div>
+              <div class="cardd">
+                <div class="boxx">
+                  <img src="images/andanh.png" alt>
+                  <div class="text">????</div>
+                  <p>
+                      <button class="badges helper">Helper</button>
+                      <button class="badges supporter">Supporter</button>
+                  </p>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <div class="loader-wrapper">
+      <img
+        src="images/krultepes-wait.gif"
+        alt="Loading..."
+      />
+
+      <div class="longfazers">
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+      </div>
+    </div>
+
+    <footer>
+      <a
+        style="display: none;"
+        href="//www.dmca.com/Protection/Status.aspx?ID=b842bcfd-d114-4df1-bcf2-47e8ec3ec450"
+        title="DMCA.com Protection Status"
+        class="dmca-badge"
+      >
+        <img
+          src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-08.png?ID=b842bcfd-d114-4df1-bcf2-47e8ec3ec450"
+          alt="DMCA.com Protection Status"
+      /></a>
+      <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+      <a
+        style="display: none;"
+        href="https://www.dmca.com/compliance/krultepes-bot.ga"
+        title="DMCA Compliance information for krultepes-bot.ga"
+        ><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png"
+      /></a>
+
+      <span
+        >Made with by
+        <a href="https://discord.com/invite/fsGhbCxH" target="_blank">Famukonkiri#2303</a
+        ><br />Copyright <span class="far fa-copyright"></span> Famukonkiri#2303 2022</span
+      >
+    </footer>
+
+    <script src="./aos/aos.js"></script>
+
+    <script type="text/javascript">
+      AOS.init({
+        duration: 1000
+      });
+    </script>
+
+    <script src="script.js"></script>
+
+    <script src="stats.js"></script>
+
+    <script>
+      $(window).on("load", function() {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+
+    <script src="./particles/particles.js"></script>
+
+    <script src="./particles/app.js"></script>
+  </body>
 </html>
