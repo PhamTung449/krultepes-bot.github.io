@@ -171,16 +171,6 @@ section .title {
   padding-bottom: 20px;
   font-family: 'Ubuntu', sans-serif;
 }
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 220px;
-  height: 3px;
-  background: #121212;
-  transform: translateX(-50%);
-}
 section .title::after {
   position: absolute;
   bottom: -12px;
@@ -204,7 +194,7 @@ section .title::after {
 .features .title::after,
 .contributors .title::after {
   background: #121212;
-  content: "Here's what I can do >ᴗ<"
+  content: "I can do >ᴗ<"
 }
 .features .features-content, 
 .stats .stats-content {
@@ -252,7 +242,7 @@ section .title::after {
   background: #fff;
 }
 .stats .title::after {
-  content: "Statistical Server - User - Commands Used";
+  content: "Statistical";
 }
 .stats p {
   color: #fff;
@@ -263,7 +253,7 @@ section .title::after {
 
 
 .contributors .title::after {
-  content: "Thanks very much!";
+  content: "Thanks you!";
 }
 .contributors .carousel .cardd {
   background: #222;
